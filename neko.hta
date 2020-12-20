@@ -1,0 +1,55 @@
+<hta:application
+
+	id="nekonotes"
+	version="1.0"
+	icon="img/neko.ico"
+	border="none"
+	innerborder="no"
+	caption="yes"
+	sysmenu="no"
+	maximizebutton="no"
+	minimizebutton="no"
+	scroll="yes"
+	scrollflat="yes"
+	singleinstance="yes"
+	showintaskbar="yes"
+	contextmenu="yes"
+	selection="yes"
+	navigable="yes"
+/>
+<html>
+<head>
+<title>
+NEKO | NOTES
+</title>
+<link type="image/ico" rel="icon" href="img/favicon.ico">
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+<!-- GUI Default Settings -->
+<script type="text/javascript">
+
+	window.resizeTo(970,650);
+	window.moveTo(170,20);
+	window.focus();
+
+	function exitPrompt() {
+
+		var exitchoice = confirm("..Exit?..")
+		
+		if (exitchoice) {
+
+			window.close()
+		}
+	}
+
+</script>
+
+<button id="exitButton" onclick="exitPrompt();"><img id="exitIMG" src="img/exit.png"></button>
+
+<iframe id="mainFrame" src="notes.html"></iframe>
+
+</body>
+</html>

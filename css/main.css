@@ -1,0 +1,38 @@
+body, html {
+
+	background:#050505;
+	background-size:cover;
+	overflow:hidden;
+	font-family:arial;
+	font-size:18px;
+	text-decoration:none;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+#exitButton {
+
+	position:absolute;
+	top:2px;
+	left:-5px;
+	border:0px solid #050505;
+	background:none;
+}
+
+#exitIMG {
+
+	position:relative;
+	width:32px;
+	height:32px;
+	border:0px solid #050505;
+	cursor:pointer;
+}
+
+#mainFrame {
+
+	position:absolute;
+	top:35px;
+	left:0px;
+	width:970px;
+	height:615px;
+}
